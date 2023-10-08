@@ -1,8 +1,9 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Fira_Code } from 'next/font/google';
+import { ThemeProvider } from '../components/theme-provider';
 
-const iraCode = Fira_Code({ subsets: ['latin'] });
+const firaCode = Fira_Code({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +17,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={iraCode.className}>{children}</body>
+      <body className={firaCode.className}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
