@@ -7,7 +7,10 @@ const firaCode = Fira_Code({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Nicholas Webster | Profile',
-  description: 'Nicholas Webster\'s personal website.',
+  description: "Nicholas Webster's personal website.",
+  verification: {
+    google: 'PnMUM8TJDVOd2awGXVARqCQfqb6beQhknenLTIfn1s0',
+  },
 };
 
 export default function RootLayout({
