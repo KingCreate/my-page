@@ -28,7 +28,7 @@ export default function Home() {
       <div className='w-max-full h-auto'>
         <Image
           className="w-auto rounded-full dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
-          src="/profile.jpg"
+          src="/profile.webp"
           alt="A Picture of Nicholas Webster"
           width={2448}
           height={2440}
