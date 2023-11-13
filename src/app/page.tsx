@@ -12,14 +12,14 @@ export default function Home() {
           <Link
             target="_blank"
             href="https://github.com/KingCreate"
-            aria-label="GitHub"
+            aria-label="Nicholas Webster's GitHub"
           >
             <Icons.gitHub className="h-7 w-7" />
           </Link>
           <Link
             target="_blank"
             href="https://www.linkedin.com/in/nicholaswebster60/"
-            aria-label="LinkedIn"
+            aria-label="Nicholas Webster's LinkedIn"
           >
             <Icons.linkedin className="h-8 w-8" />
           </Link>
@@ -27,9 +27,9 @@ export default function Home() {
       </div>
       <div className='w-max-full h-auto'>
         <Image
-          className="rounded-full w-auto dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
+          className="w-auto rounded-full dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
           src="/profile.jpg"
-          alt="A Picture of me"
+          alt="A Picture of Nicholas Webster"
           width={2448}
           height={2440}
           priority
