@@ -1,11 +1,11 @@
-import Image from 'next/image';
 import { Icons } from '../components/icons';
 import Link from 'next/link';
+import { ProfilePicture } from '../components/profile-pic';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-4 sm:flex-row">
-      <div className="ml-auto flex w-full flex-col gap-4">
+    <main className="flex min-h-screen flex-col items-center p-4 sm:flex-row sm:justify-center">
+      <div className="flex flex-col gap-4">
         <h1 className="text-5xl font-bold">Nicholas Webster</h1>
         <p className="text-2xl font-semibold">Software Engineer</p>
         <div className="flex flex-row gap-2">
@@ -25,13 +25,9 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className='w-max-full h-auto'>
-        <Image
+      <div className="w-max-full h-auto sm:ml-8">
+        <ProfilePicture
           className="w-auto rounded-full dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
-          src="/profile.webp"
-          alt="A Picture of Nicholas Webster"
-          width={2448}
-          height={2440}
           priority
         />
       </div>
